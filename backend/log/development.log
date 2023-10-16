@@ -1,0 +1,2388 @@
+Started GET "/" for 127.0.0.1 at 2021-11-23 00:10:10 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.8ms | Allocations: 402)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3429)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-11-23 00:10:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2021-11-23 22:44:11 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.9ms | Allocations: 294)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 2349)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-23 22:44:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/emails"):
+  
+Started GET "/email" for 127.0.0.1 at 2021-11-23 22:44:24 +0100
+  
+ActionController::RoutingError (uninitialized constant EmailController
+Did you mean?  EmailsController):
+  
+Started GET "/emails" for 127.0.0.1 at 2021-11-23 22:44:52 +0100
+Processing by EmailsController#index as HTML
+Completed 204 No Content in 0ms (Allocations: 56)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-23 22:45:09 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EmailsController#index as HTML
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 1857)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-23 22:45:34 +0100
+Processing by EmailsController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 30)
+
+
+Started GET "/email" for 127.0.0.1 at 2021-11-23 22:45:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/email"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-11-23 22:45:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/emails/2" for 127.0.0.1 at 2021-11-23 22:45:57 +0100
+Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 52)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-25 00:13:53 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.5ms | Allocations: 294)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2277)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:14:05 +0100
+Processing by EmailsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1757)
+
+
+  
+NameError (uninitialized constant Net::IMAP):
+  
+app/controllers/emails_controller.rb:3:in `index'
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:15:27 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EmailsController#index as HTML
+Completed 204 No Content in 4946ms (ActiveRecord: 0.0ms | Allocations: 31173)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:16:45 +0100
+Processing by EmailsController#index as HTML
+Completed 200 OK in 5657ms (Views: 0.6ms | Allocations: 29193)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:26:35 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EmailsController#index as HTML
+Completed 500 Internal Server Error in 1581ms (ActiveRecord: 0.0ms | Allocations: 4997)
+
+
+  
+NameError (undefined local variable or method `iimap' for #<EmailsController:0x00000000006568>
+Did you mean?  imap):
+  
+app/controllers/emails_controller.rb:8:in `index'
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:26:55 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EmailsController#index as HTML
+Completed 200 OK in 2311ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 14389)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:27:55 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EmailsController#index as HTML
+Completed 200 OK in 5908ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 31589)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-25 00:31:20 +0100
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.2ms | Allocations: 294)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2321)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-25 00:31:28 +0100
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.3ms | Allocations: 182)
+Completed 200 OK in 22ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 826)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-25 00:33:37 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.7ms | Allocations: 294)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2322)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-25 00:33:45 +0100
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/stan/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.0ms | Allocations: 178)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 760)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:34:13 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:34:18 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5394ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 30641)
+
+
+Completed 200 OK in 5710ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 35149)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:34:25 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5637ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 29206)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:36:33 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 6111ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 29209)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:41:38 +0100
+Processing by EmailsController#index as HTML
+Completed 200 OK in 5085ms (Views: 0.6ms | Allocations: 29189)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:45:12 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5011ms (Views: 1.6ms | Allocations: 29209)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:45:29 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5575ms (Views: 1.8ms | Allocations: 29207)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:45:56 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:46:00 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5443ms (Views: 0.5ms | Allocations: 30413)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:46:03 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 4439ms (Views: 0.9ms | Allocations: 36371)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:46:07 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5632ms (Views: 1.7ms | Allocations: 53051)
+
+
+Completed 200 OK in 4991ms (Views: 1.3ms | Allocations: 41479)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:46:25 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:46:30 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5461ms (Views: 0.6ms | Allocations: 29927)
+
+
+Completed 200 OK in 5506ms (Views: 0.6ms | Allocations: 31985)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:46:48 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5572ms (Views: 0.7ms | Allocations: 29200)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:47:28 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5441ms (Views: 0.7ms | Allocations: 29200)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:47:34 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5049ms (Views: 1.0ms | Allocations: 29255)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:47:52 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5510ms (Views: 1.5ms | Allocations: 29257)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:48:07 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:48:10 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5657ms (Views: 1.7ms | Allocations: 43770)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:48:13 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 6403ms (Views: 1.1ms | Allocations: 60988)
+
+
+Completed 200 OK in 7119ms (Views: 0.9ms | Allocations: 43073)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:50:38 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:50:42 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5483ms (Views: 0.6ms | Allocations: 31178)
+
+
+Completed 200 OK in 5371ms (Views: 0.6ms | Allocations: 41522)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:50:51 +0100
+Processing by EmailsController#index as */*
+Completed 500 Internal Server Error in 1416ms (Allocations: 437)
+
+
+  
+Net::IMAP::NoResponseError ( Too many simultaneous connections. (Failure)):
+  
+app/controllers/emails_controller.rb:6:in `index'
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:53:07 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5370ms (Views: 1.2ms | Allocations: 29256)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:54:42 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5683ms (Views: 1.3ms | Allocations: 29243)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:54:52 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5535ms (Views: 0.5ms | Allocations: 29262)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:54:57 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5624ms (Views: 1.9ms | Allocations: 29258)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:57:37 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5845ms (Views: 0.8ms | Allocations: 29265)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:57:54 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5467ms (Views: 0.7ms | Allocations: 29252)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:59:35 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5560ms (Views: 1.7ms | Allocations: 29272)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 00:59:42 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5636ms (Views: 1.8ms | Allocations: 29255)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 01:02:52 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5295ms (Views: 1.5ms | Allocations: 29255)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 01:03:08 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5286ms (Views: 1.8ms | Allocations: 29251)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 01:03:15 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 01:03:19 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5609ms (Views: 0.9ms | Allocations: 30536)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 01:03:22 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5803ms (Views: 0.7ms | Allocations: 40540)
+
+
+Completed 200 OK in 5533ms (Views: 0.7ms | Allocations: 40072)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 09:27:24 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 6467ms (Views: 0.6ms | Allocations: 29814)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 09:31:02 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 09:31:02 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5153ms (Views: 1.4ms | Allocations: 57163)
+
+
+Completed 200 OK in 5399ms (Views: 0.8ms | Allocations: 60187)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 09:32:05 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 09:32:05 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5415ms (Views: 1.3ms | Allocations: 56052)
+
+
+Completed 200 OK in 6695ms (Views: 0.8ms | Allocations: 59818)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 12:04:09 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 12:04:12 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5646ms (Views: 1.7ms | Allocations: 44332)
+
+
+Completed 200 OK in 5528ms (Views: 1.4ms | Allocations: 45950)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 12:04:43 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 12:04:46 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5636ms (Views: 0.8ms | Allocations: 42808)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 12:04:50 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5609ms (Views: 1.5ms | Allocations: 46346)
+
+
+Completed 200 OK in 5564ms (Views: 1.8ms | Allocations: 41147)
+
+
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 12:53:42 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:25: syntax error, unexpected '|', expecting ')'
+...der :json => letter.parts.map(|part| sanitize part.decoded)
+...                              ^
+/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:25: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+....parts.map(|part| sanitize part.decoded)
+...                           ^~~~
+/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:25: syntax error, unexpected ')', expecting `end'
+...p(|part| sanitize part.decoded)
+...                              ^
+/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+...ender :json => [sanitize letter.decoded]
+...                         ^~~~~~
+/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:27: syntax error, unexpected ']', expecting `end'
+...on => [sanitize letter.decoded]
+...                              ^
+):
+  
+app/controllers/emails_controller.rb:25: syntax error, unexpected '|', expecting ')'
+app/controllers/emails_controller.rb:25: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/emails_controller.rb:25: syntax error, unexpected ')', expecting `end'
+app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/emails_controller.rb:27: syntax error, unexpected ']', expecting `end'
+app/controllers/emails_controller.rb:25: syntax error, unexpected '|', expecting ')'
+app/controllers/emails_controller.rb:25: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/emails_controller.rb:25: syntax error, unexpected ')', expecting `end'
+app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/emails_controller.rb:27: syntax error, unexpected ']', expecting `end'
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 12:54:20 +0100
+  
+SyntaxError (/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+...ender :json => [sanitize letter.decoded]
+...                         ^~~~~~
+/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:27: syntax error, unexpected ']', expecting `end'
+...on => [sanitize letter.decoded]
+...                              ^
+):
+  
+app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/emails_controller.rb:27: syntax error, unexpected ']', expecting `end'
+app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/emails_controller.rb:27: syntax error, unexpected ']', expecting `end'
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 12:55:37 +0100
+Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"57167"}
+Completed 500 Internal Server Error in 2730ms (Allocations: 1429)
+
+
+  
+Net::IMAP::DataFormatError ("57167"):
+  
+app/controllers/emails_controller.rb:22:in `show'
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 12:56:10 +0100
+Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"57167"}
+Completed 200 OK in 1960ms (Views: 2.2ms | Allocations: 29645)
+
+
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 18:23:52 +0100
+Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"57167"}
+Completed 200 OK in 3593ms (Views: 2.3ms | Allocations: 29117)
+
+
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 19:19:35 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57167"}
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 19:19:38 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57167"}
+Completed 200 OK in 12492ms (Views: 1.5ms | Allocations: 31060)
+
+
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 19:19:55 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57167"}
+Completed 200 OK in 35342ms (Views: 2.1ms | Allocations: 60286)
+
+
+Completed 200 OK in 22914ms (Views: 2.0ms | Allocations: 57226)
+
+
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 19:20:22 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57167"}
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 19:20:29 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 19:21:00 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 41175ms (Views: 4.3ms | Allocations: 42900)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 19:21:18 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 149027ms (Views: 1.8ms | Allocations: 92573)
+
+
+Completed 200 OK in 138212ms (Views: 4.4ms | Allocations: 73944)
+
+
+Completed 200 OK in 193170ms (Views: 3.1ms | Allocations: 122846)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 19:24:16 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 19:58:35 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57167"}
+Completed 500 Internal Server Error in 1921ms (Allocations: 1962)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/emails_controller.rb:22:in `show'
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 19:59:11 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57167"}
+Completed 500 Internal Server Error in 1920ms (Allocations: 1949)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/emails_controller.rb:22:in `show'
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 19:59:28 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57167"}
+Completed 500 Internal Server Error in 2262ms (Allocations: 1953)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/emails_controller.rb:22:in `show'
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 19:59:33 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57167"}
+Completed 500 Internal Server Error in 2099ms (Allocations: 1949)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/emails_controller.rb:22:in `show'
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 19:59:37 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 6602ms (Views: 0.9ms | Allocations: 29599)
+
+
+Started GET "/emails/57169" for 127.0.0.1 at 2021-11-25 19:59:54 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57169"}
+Completed 200 OK in 2445ms (Views: 1.6ms | Allocations: 33857)
+
+
+Started GET "/emails/57169" for 127.0.0.1 at 2021-11-25 20:00:36 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57169"}
+Completed 200 OK in 1933ms (Views: 1.9ms | Allocations: 33865)
+
+
+Started GET "/emails/57169" for 127.0.0.1 at 2021-11-25 20:00:49 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57169"}
+Completed 200 OK in 2585ms (Views: 4.5ms | Allocations: 33867)
+
+
+Started GET "/emails/57169" for 127.0.0.1 at 2021-11-25 20:04:23 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57169"}
+Completed 200 OK in 2628ms (Views: 1.9ms | Allocations: 33866)
+
+
+Started GET "/emails/57169" for 127.0.0.1 at 2021-11-25 20:08:00 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57169"}
+Completed 200 OK in 2779ms (Views: 1.9ms | Allocations: 33853)
+
+
+Started GET "/emails/57169" for 127.0.0.1 at 2021-11-25 20:38:43 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57169"}
+Started GET "/emails/57169" for 127.0.0.1 at 2021-11-25 20:38:59 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57169"}
+Completed 200 OK in 18003ms (Views: 1.9ms | Allocations: 34532)
+
+
+Completed 200 OK in 6671ms (Views: 1.7ms | Allocations: 66664)
+
+
+Started GET "/emails/57169" for 127.0.0.1 at 2021-11-25 20:42:09 +0100
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 20:52:47 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EmailsController#index as */*
+Completed 200 OK in 6190ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 31988)
+
+
+Started GET "/emails/57170" for 127.0.0.1 at 2021-11-25 20:52:57 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57170"}
+Completed 200 OK in 2880ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 8226)
+
+
+Started GET "/emails/57170" for 127.0.0.1 at 2021-11-25 20:59:45 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57170"}
+Completed 200 OK in 2261ms (Views: 13.0ms | Allocations: 7118)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 21:45:35 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 6321ms (Views: 2.8ms | Allocations: 29096)
+
+
+Started GET "/emails/57170" for 127.0.0.1 at 2021-11-25 21:45:45 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57170"}
+Completed 200 OK in 2668ms (Views: 17.3ms | Allocations: 7105)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 21:48:03 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 4932ms (Views: 0.9ms | Allocations: 29104)
+
+
+Started GET "/emails/57175" for 127.0.0.1 at 2021-11-25 21:48:15 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57175"}
+Completed 200 OK in 2517ms (Views: 4.4ms | Allocations: 4821)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 21:58:02 +0100
+Processing by EmailsController#index as */*
+Started GET "/emails/57175" for 127.0.0.1 at 2021-11-25 21:58:07 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57175"}
+Completed 200 OK in 5400ms (Views: 0.6ms | Allocations: 29975)
+
+
+Completed 200 OK in 2002ms (Views: 3.9ms | Allocations: 10279)
+
+
+Started GET "/emails/57175" for 127.0.0.1 at 2021-11-25 21:58:09 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57175"}
+Completed 200 OK in 1849ms (Views: 3.6ms | Allocations: 4801)
+
+
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 22:09:01 +0100
+Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"57167"}
+Completed 500 Internal Server Error in 2062ms (Allocations: 1944)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/emails_controller.rb:22:in `show'
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-11-25 22:09:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/emails/57167" for 127.0.0.1 at 2021-11-25 22:09:22 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"57167"}
+Completed 500 Internal Server Error in 1717ms (ActiveRecord: 0.0ms | Allocations: 3791)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/emails_controller.rb:22:in `show'
+Started GET "/emails/57175" for 127.0.0.1 at 2021-11-25 22:10:00 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57175"}
+Completed 200 OK in 2481ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 6337)
+
+
+Started GET "/emails/57175" for 127.0.0.1 at 2021-11-25 22:12:57 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57175"}
+Completed 200 OK in 1988ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4808)
+
+
+Started GET "/emails/57175" for 127.0.0.1 at 2021-11-25 22:13:36 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57175"}
+Completed 200 OK in 1861ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 4824)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 22:13:43 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5579ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 30330)
+
+
+Started GET "/emails/57179" for 127.0.0.1 at 2021-11-25 22:13:58 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57179"}
+Completed 200 OK in 1717ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 4134)
+
+
+Started GET "/emails/57179" for 127.0.0.1 at 2021-11-25 22:14:43 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57179"}
+Completed 200 OK in 2407ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 4124)
+
+
+Started GET "/emails/57179" for 127.0.0.1 at 2021-11-25 22:17:09 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57179"}
+Completed 200 OK in 2423ms (Views: 14.0ms | Allocations: 4125)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 22:17:35 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5961ms (Views: 0.8ms | Allocations: 29105)
+
+
+Started GET "/emails/57179" for 127.0.0.1 at 2021-11-25 22:18:03 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57179"}
+Completed 200 OK in 1620ms (Views: 3.6ms | Allocations: 4136)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 22:18:08 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5012ms (Views: 15.1ms | Allocations: 29080)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-25 23:09:54 +0100
+Processing by EmailsController#index as */*
+Completed 200 OK in 5898ms (Views: 1.8ms | Allocations: 29111)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 10:50:53 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:34: syntax error, unexpected '}', expecting =>
+...permit(:to, :cc, :bcc, :text) }
+...                              ^
+):
+  
+app/controllers/emails_controller.rb:34: syntax error, unexpected '}', expecting =>
+app/controllers/emails_controller.rb:34: syntax error, unexpected '}', expecting =>
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 10:51:32 +0100
+Processing by EmailsController#create as */*
+Completed 400 Bad Request in 3ms (Allocations: 2687)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: email
+Did you mean?  action
+               controller):
+  
+app/controllers/emails_controller.rb:34:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 10:57:52 +0100
+Processing by EmailsController#create as */*
+Completed 500 Internal Server Error in 0ms (Allocations: 108)
+
+
+  
+ArgumentError (wrong number of arguments (given 4, expected 1)):
+  
+app/controllers/emails_controller.rb:34:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 11:04:18 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by EmailsController#create as */*
+Completed 500 Internal Server Error in 195255ms (ActiveRecord: 0.0ms | Allocations: 55245)
+
+
+  
+ArgumentError (wrong number of arguments (given 4, expected 1)):
+  
+app/controllers/emails_controller.rb:34:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 11:07:46 +0100
+Processing by EmailsController#create as */*
+Completed 500 Internal Server Error in 1315720ms (ActiveRecord: 0.0ms | Allocations: 3094)
+
+
+  
+ArgumentError (wrong number of arguments (given 4, expected 1)):
+  
+app/controllers/emails_controller.rb:34:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 11:29:51 +0100
+Processing by EmailsController#create as */*
+Completed 500 Internal Server Error in 65124ms (Allocations: 1860)
+
+
+  
+ArgumentError (wrong number of arguments (given 4, expected 1)):
+  
+app/controllers/emails_controller.rb:34:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 11:30:56 +0100
+Processing by EmailsController#create as */*
+Completed 500 Internal Server Error in 4600ms (Allocations: 1779)
+
+
+  
+ArgumentError (wrong number of arguments (given 4, expected 1)):
+  
+app/controllers/emails_controller.rb:34:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 11:33:18 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"email"=>{"to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "text"=>"TEXT"}}
+Completed 500 Internal Server Error in 33040ms (Allocations: 1962)
+
+
+  
+ArgumentError (wrong number of arguments (given 4, expected 1)):
+  
+app/controllers/emails_controller.rb:34:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 11:33:59 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"email"=>{"to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "text"=>"TEXT"}}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 218)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 11:34:54 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"email"=>{"to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "text"=>"TEXT"}}
+Completed 200 OK in 317196ms (Views: 0.8ms | Allocations: 2460)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 12:43:14 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:52: syntax error, unexpected ')', expecting `end'
+...ender :json => { status: :ok })
+...                              ^
+):
+  
+app/controllers/emails_controller.rb:52: syntax error, unexpected ')', expecting `end'
+app/controllers/emails_controller.rb:52: syntax error, unexpected ')', expecting `end'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 12:43:31 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"email"=>{"to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>"}}
+Completed 500 Internal Server Error in 7ms (Allocations: 4881)
+
+
+  
+NameError (undefined local variable or method `params' for #<Mail::Message:14540, Multipart: false, Headers: >
+Did you mean?  parts):
+  
+app/controllers/emails_controller.rb:43:in `block in create'
+app/controllers/emails_controller.rb:42:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 12:46:22 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"email"=>{"to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>"}}
+Completed 500 Internal Server Error in 1088ms (Allocations: 811)
+
+
+  
+ArgumentError (SMTP From address may not be blank: nil):
+  
+app/controllers/emails_controller.rb:52:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 12:49:26 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"email"=>{"to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>"}}
+Completed 500 Internal Server Error in 955ms (Allocations: 606)
+
+
+  
+ArgumentError (SMTP From address may not be blank: nil):
+  
+app/controllers/emails_controller.rb:53:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 12:51:46 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"email"=>{"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>"}}
+Completed 500 Internal Server Error in 863ms (Allocations: 592)
+
+
+  
+ArgumentError (SMTP From address may not be blank: nil):
+  
+app/controllers/emails_controller.rb:53:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 12:52:26 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>", "email"=>{"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>"}}
+Completed 200 OK in 2348ms (Views: 0.7ms | Allocations: 3062)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 13:09:08 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>", "email"=>{"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>"}}
+Completed 200 OK in 2492ms (Views: 0.7ms | Allocations: 1687)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 13:12:14 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>", "email"=>{"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>"}}
+Completed 200 OK in 3985ms (Views: 0.7ms | Allocations: 2031)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 13:32:56 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>", "email"=>{"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"stan.pankov.here@gmail.com", "bcc"=>"olborska.marta@gmail.com", "subject"=>"subject", "text"=>"<h1>TEXT</h1>"}}
+Completed 200 OK in 3035ms (Views: 0.6ms | Allocations: 1988)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 13:47:47 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wifjr3fiover", "text"=>"<h1 id=\"fwfewefwe\">fwfewefwe</h1>\n<ul>\n<li>d</li>\n<li>-d</li>\n</ul>\n<h4 id=\"uuuuu\">uuuuu</h4>", "email"=>{"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wifjr3fiover", "text"=>"<h1 id=\"fwfewefwe\">fwfewefwe</h1>\n<ul>\n<li>d</li>\n<li>-d</li>\n</ul>\n<h4 id=\"uuuuu\">uuuuu</h4>"}}
+Completed 200 OK in 2130ms (Views: 0.2ms | Allocations: 1843)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-26 20:03:55 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wifjr3fiover rf3ref", "text"=>"<h1 id=\"fwfewefwe\">fwfewefwe</h1>\n<ul>\n<li>d</li>\n<li>-d</li>\n</ul>\n<h4 id=\"uuuuu\">uuuuu</h4>", "email"=>{"from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wifjr3fiover rf3ref", "text"=>"<h1 id=\"fwfewefwe\">fwfewefwe</h1>\n<ul>\n<li>d</li>\n<li>-d</li>\n</ul>\n<h4 id=\"uuuuu\">uuuuu</h4>"}}
+Completed 200 OK in 2767ms (Views: 0.6ms | Allocations: 1849)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCredentialSessions (20211126201922)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCredentialSessions (20211126201922)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "credential_sessions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "imap_host" varchar NOT NULL, "imap_port" integer NOT NULL, "smtp_host" varchar NOT NULL, "smtp_port" integer NOT NULL, "domain" varchar NOT NULL, "username" varchar NOT NULL, "from_email" varchar NOT NULL, "password" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211126201922"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-26 20:49:16.206523"], ["updated_at", "2021-11-26 20:49:16.206523"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCredentialSession Create (0.6ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-26 21:23:34.500161"], ["updated_at", "2021-11-26 21:23:34.500161"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCredentialSession Create (0.5ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", ""], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-26 21:24:45.873877"], ["updated_at", "2021-11-26 21:24:45.873877"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCredentialSession Create (0.4ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", ""], ["created_at", "2021-11-26 21:25:03.352096"], ["updated_at", "2021-11-26 21:25:03.352096"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-26 22:59:33 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+Zeitwerk::NameError (expected file /Users/stan/projects/email/backend/app/controllers/credential_sessions_controller.rb to define constant CredentialSessionsController, but didn't):
+  
+zeitwerk (2.5.1) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.5.1) lib/zeitwerk/kernel.rb:28:in `block in require'
+zeitwerk (2.5.1) lib/zeitwerk/kernel.rb:27:in `tap'
+zeitwerk (2.5.1) lib/zeitwerk/kernel.rb:27:in `require'
+activesupport (6.1.4.1) lib/active_support/inflector/methods.rb:274:in `const_get'
+activesupport (6.1.4.1) lib/active_support/inflector/methods.rb:274:in `constantize'
+activesupport (6.1.4.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.1.4.1) lib/action_dispatch/http/request.rb:93:in `controller_class_for'
+actionpack (6.1.4.1) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.4.1) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.4.1) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.4.1) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-26 23:00:15 +0100
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.5ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-26 22:00:15.682561"], ["updated_at", "2021-11-26 22:00:15.682561"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 8778)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:15:37 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (1.0ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 11:15:37.179366"], ["updated_at", "2021-11-27 11:15:37.179366"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 2252)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:32:18 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"", "from_email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (1.0ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", ""], ["from_email", ""], ["password", ""], ["created_at", "2021-11-27 11:32:18.587477"], ["updated_at", "2021-11-27 11:32:18.587477"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 2234)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCredentialSessions (20211126201922)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "credential_sessions"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20211126201922"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCredentialSessions (20211126201922)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "credential_sessions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "imap_host" varchar NOT NULL, "imap_port" integer NOT NULL, "smtp_host" varchar NOT NULL, "smtp_port" integer NOT NULL, "domain" varchar NOT NULL, "username" varchar NOT NULL, "from_email" varchar NOT NULL, "password" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211126201922"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:35:06 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"", "from_email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.5ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", ""], ["from_email", ""], ["password", ""], ["created_at", "2021-11-27 11:35:06.589269"], ["updated_at", "2021-11-27 11:35:06.589269"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 9504)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:35:17 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"", "from_email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.4ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", ""], ["from_email", ""], ["password", ""], ["created_at", "2021-11-27 11:35:17.208460"], ["updated_at", "2021-11-27 11:35:17.208460"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 1867)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:41:02 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"", "from_email"=>"", "password"=>"[FILTERED]"}}
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4472)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:41:04 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"", "from_email"=>"", "password"=>"[FILTERED]"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 395)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCredentialSession Create (0.3ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", ""], ["created_at", "2021-11-27 11:42:54.064083"], ["updated_at", "2021-11-27 11:42:54.064083"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCredentialSession Create (0.6ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 11:43:09.644631"], ["updated_at", "2021-11-27 11:43:09.644631"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCredentialSession Create (0.4ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", ""], ["created_at", "2021-11-27 11:43:25.671785"], ["updated_at", "2021-11-27 11:43:25.671785"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCredentialSession Create (0.4ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "refer"], ["created_at", "2021-11-27 11:45:51.382632"], ["updated_at", "2021-11-27 11:45:51.382632"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:49:28 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/stan/projects/email/backend/app/controllers/credential_sessions_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/credential_sessions_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/credential_sessions_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:50:02 +0100
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"", "from_email"=>"", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms | Allocations: 10438)
+
+
+  
+NoMethodError (undefined method `persisted' for #<CredentialSession:0x0000000121267998>
+Did you mean?  persisted?):
+  
+app/controllers/credential_sessions_controller.rb:18:in `create'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:50:22 +0100
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"", "from_email"=>"", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 7ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4462)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:50:57 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.9ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 11:50:57.433545"], ["updated_at", "2021-11-27 11:50:57.433545"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 1942)
+
+
+Started GET "/emails" for 127.0.0.1 at 2021-11-27 12:51:03 +0100
+Processing by EmailsController#index as */*
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 401)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CredentialSession without an ID):
+  
+app/controllers/emails_controller.rb:5:in `index'
+Started GET "/emails/57179" for 127.0.0.1 at 2021-11-27 12:58:51 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"id"=>"57179"}
+Completed 404 Not Found in 0ms (Allocations: 126)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CredentialSession without an ID):
+  
+app/controllers/emails_controller.rb:19:in `show'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 12:59:08 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"", "from_email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 838)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 13:15:09 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (1.1ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 12:15:09.141050"], ["updated_at", "2021-11-27 12:15:09.141050"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 2247)
+
+
+Started GET "/emails?credential_session=7" for 127.0.0.1 at 2021-11-27 13:15:09 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session"=>"7"}
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 125)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CredentialSession without an ID):
+  
+app/controllers/emails_controller.rb:5:in `index'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 13:21:50 +0100
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrad@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrad@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.6ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrad@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 12:21:50.185722"], ["updated_at", "2021-11-27 12:21:50.185722"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 5749)
+
+
+Started GET "/emails?credential_session_id=8" for 127.0.0.1 at 2021-11-27 13:21:50 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"8"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 6883ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 32864)
+
+
+Started GET "/emails/57197?credential_session_id=8" for 127.0.0.1 at 2021-11-27 13:22:06 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"8", "id"=>"57197"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 1587ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 4552)
+
+
+Started GET "/emails/57195?credential_session_id=8" for 127.0.0.1 at 2021-11-27 13:22:13 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"8", "id"=>"57195"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 1961ms (Views: 15.8ms | ActiveRecord: 0.1ms | Allocations: 7527)
+
+
+Started GET "/emails/57204?credential_session_id=8" for 127.0.0.1 at 2021-11-27 13:25:08 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"8", "id"=>"57204"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 1840ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 4927)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 13:26:45 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>8, "from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"Test subject", "text"=>"<h3 id=\"testemail\">Test email</h3>\n<p>Hey, my name is stan</p>\n<p>Best,</p>\n<p>Stan</p>", "email"=>{"credential_session_id"=>8, "from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"Test subject", "text"=>"<h3 id=\"testemail\">Test email</h3>\n<p>Hey, my name is stan</p>\n<p>Best,</p>\n<p>Stan</p>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:34:in `create'
+Completed 200 OK in 2120ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 3553)
+
+
+Started GET "/emails/57195?credential_session_id=8" for 127.0.0.1 at 2021-11-27 13:47:08 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"8", "id"=>"57195"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 3550ms (Views: 18.5ms | ActiveRecord: 0.7ms | Allocations: 7990)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 13:50:16 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>8, "from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.her@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"fvrgvrgv", "text"=>"<p>Donaldknuth</p>", "email"=>{"credential_session_id"=>8, "from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.her@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"fvrgvrgv", "text"=>"<p>Donaldknuth</p>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:34:in `create'
+Completed 200 OK in 2244ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 2130)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 13:50:30 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>8, "from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.her@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"fvrgvrgv", "text"=>"<p>ewfretgvrtv</p>", "email"=>{"credential_session_id"=>8, "from"=>"stlestrade@gmail.com", "to"=>"pankov.stan.her@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"fvrgvrgv", "text"=>"<p>ewfretgvrtv</p>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:34:in `create'
+Completed 200 OK in 1900ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 2129)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 14:15:30 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.7ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 13:15:30.832630"], ["updated_at", "2021-11-27 13:15:30.832630"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 2244)
+
+
+Started GET "/emails?credential_session_id=9" for 127.0.0.1 at 2021-11-27 14:15:30 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"9"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 6727ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 32101)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 14:55:42 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (1.1ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 13:55:42.302986"], ["updated_at", "2021-11-27 13:55:42.302986"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 2248)
+
+
+Started GET "/emails?credential_session_id=10" for 127.0.0.1 at 2021-11-27 14:55:42 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"10"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5645ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 31692)
+
+
+Started GET "/emails/57201?credential_session_id=10" for 127.0.0.1 at 2021-11-27 14:55:58 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"10", "id"=>"57201"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 2212ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 7105)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 14:57:26 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.5ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 13:57:26.835256"], ["updated_at", "2021-11-27 13:57:26.835256"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 5911)
+
+
+Started GET "/emails?credential_session_id=11" for 127.0.0.1 at 2021-11-27 14:57:26 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"11"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5981ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 32761)
+
+
+Started GET "/emails/58201?credential_session_id=11" for 127.0.0.1 at 2021-11-27 14:57:47 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"11", "id"=>"58201"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 2383ms (ActiveRecord: 0.1ms | Allocations: 3719)
+
+
+  
+NoMethodError (Can not decode an entire message, try calling #decoded on the various fields and body or parts if it is a multipart message.):
+  
+app/controllers/emails_controller.rb:27:in `block in show'
+app/controllers/emails_controller.rb:27:in `show'
+Started GET "/emails/58201?credential_session_id=null" for 127.0.0.1 at 2021-11-27 15:00:15 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"null", "id"=>"58201"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 472)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CredentialSession with 'id'=null):
+  
+app/controllers/emails_controller.rb:19:in `show'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 15:02:42 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.7ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 14:02:43.000970"], ["updated_at", "2021-11-27 14:02:43.000970"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 1795)
+
+
+Started GET "/emails?credential_session_id=12" for 127.0.0.1 at 2021-11-27 15:02:43 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"12"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5037ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 30570)
+
+
+Started GET "/emails/58200?credential_session_id=12" for 127.0.0.1 at 2021-11-27 15:02:56 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"12", "id"=>"58200"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 2158ms (ActiveRecord: 0.2ms | Allocations: 3717)
+
+
+  
+NoMethodError (Can not decode an entire message, try calling #decoded on the various fields and body or parts if it is a multipart message.):
+  
+app/controllers/emails_controller.rb:27:in `block in show'
+app/controllers/emails_controller.rb:27:in `show'
+Started GET "/emails/58200?credential_session_id=null" for 127.0.0.1 at 2021-11-27 15:04:14 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"null", "id"=>"58200"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 472)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CredentialSession with 'id'=null):
+  
+app/controllers/emails_controller.rb:19:in `show'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 15:04:32 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.6ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 14:04:32.281815"], ["updated_at", "2021-11-27 14:04:32.281815"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.9ms | Allocations: 1796)
+
+
+Started GET "/emails?credential_session_id=13" for 127.0.0.1 at 2021-11-27 15:04:32 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"13"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5255ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 30566)
+
+
+Started GET "/emails/58197?credential_session_id=13" for 127.0.0.1 at 2021-11-27 15:04:41 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"13", "id"=>"58197"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 2305ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 4111)
+
+
+Started GET "/emails/58197?credential_session_id=null" for 127.0.0.1 at 2021-11-27 15:05:08 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"null", "id"=>"58197"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 473)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CredentialSession with 'id'=null):
+  
+app/controllers/emails_controller.rb:19:in `show'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 15:05:16 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.6ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 14:05:16.444343"], ["updated_at", "2021-11-27 14:05:16.444343"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 1795)
+
+
+Started GET "/emails?credential_session_id=14" for 127.0.0.1 at 2021-11-27 15:05:16 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"14"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5710ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 30564)
+
+
+Started GET "/emails/58200?credential_session_id=14" for 127.0.0.1 at 2021-11-27 15:05:26 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"14", "id"=>"58200"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 2409ms (ActiveRecord: 0.2ms | Allocations: 3712)
+
+
+  
+NoMethodError (Can not decode an entire message, try calling #decoded on the various fields and body or parts if it is a multipart message.):
+  
+app/controllers/emails_controller.rb:27:in `block in show'
+app/controllers/emails_controller.rb:27:in `show'
+Started GET "/emails/58198?credential_session_id=14" for 127.0.0.1 at 2021-11-27 15:05:49 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"14", "id"=>"58198"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 2857ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 5864)
+
+
+Started GET "/emails/58198?credential_session_id=null" for 127.0.0.1 at 2021-11-27 15:06:20 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"null", "id"=>"58198"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 473)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CredentialSession with 'id'=null):
+  
+app/controllers/emails_controller.rb:19:in `show'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 15:06:29 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.5ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 14:06:29.396933"], ["updated_at", "2021-11-27 14:06:29.396933"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 1795)
+
+
+Started GET "/emails?credential_session_id=15" for 127.0.0.1 at 2021-11-27 15:06:29 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"15"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5467ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 30566)
+
+
+Started GET "/emails/58193?credential_session_id=15" for 127.0.0.1 at 2021-11-27 15:06:37 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"15", "id"=>"58193"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 2198ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 3843)
+
+
+Started GET "/emails/58201?credential_session_id=15" for 127.0.0.1 at 2021-11-27 15:06:46 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"15", "id"=>"58201"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 1636ms (ActiveRecord: 0.1ms | Allocations: 3706)
+
+
+  
+NoMethodError (Can not decode an entire message, try calling #decoded on the various fields and body or parts if it is a multipart message.):
+  
+app/controllers/emails_controller.rb:27:in `block in show'
+app/controllers/emails_controller.rb:27:in `show'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 15:11:55 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 15:12:10 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.6ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 14:12:10.882550"], ["updated_at", "2021-11-27 14:12:10.882550"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 1795)
+
+
+Started GET "/emails?credential_session_id=16" for 127.0.0.1 at 2021-11-27 15:12:10 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"16"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5705ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 30575)
+
+
+Started GET "/emails/58200?credential_session_id=16" for 127.0.0.1 at 2021-11-27 15:12:21 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"16", "id"=>"58200"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 2355ms (ActiveRecord: 0.2ms | Allocations: 3769)
+
+
+  
+NoMethodError (Can not decode an entire message, try calling #decoded on the various fields and body or parts if it is a multipart message.):
+  
+app/controllers/emails_controller.rb:27:in `block in show'
+app/controllers/emails_controller.rb:27:in `show'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 15:14:09 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.4ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 14:14:09.329347"], ["updated_at", "2021-11-27 14:14:09.329347"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 1795)
+
+
+Started GET "/emails?credential_session_id=17" for 127.0.0.1 at 2021-11-27 15:14:09 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"17"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 4789ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 30632)
+
+
+Started GET "/emails/58200?credential_session_id=17" for 127.0.0.1 at 2021-11-27 15:16:06 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"17", "id"=>"58200"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 2526ms (ActiveRecord: 0.1ms | Allocations: 3767)
+
+
+  
+NoMethodError (Can not decode an entire message, try calling #decoded on the various fields and body or parts if it is a multipart message.):
+  
+app/controllers/emails_controller.rb:27:in `block in show'
+app/controllers/emails_controller.rb:27:in `show'
+Started GET "/emails/58201?credential_session_id=17" for 127.0.0.1 at 2021-11-27 15:16:43 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"17", "id"=>"58201"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 1088775ms (ActiveRecord: 0.7ms | Allocations: 63241)
+
+
+  
+NoMethodError (Can not decode an entire message, try calling #decoded on the various fields and body or parts if it is a multipart message.):
+  
+app/controllers/emails_controller.rb:28:in `block in show'
+app/controllers/emails_controller.rb:28:in `show'
+Started GET "/emails/58200?credential_session_id=17" for 127.0.0.1 at 2021-11-27 15:34:52 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"17", "id"=>"58200"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 28104ms (ActiveRecord: 0.1ms | Allocations: 11533)
+
+
+  
+NoMethodError (Can not decode an entire message, try calling #decoded on the various fields and body or parts if it is a multipart message.):
+  
+app/controllers/emails_controller.rb:28:in `block in show'
+app/controllers/emails_controller.rb:28:in `show'
+Started GET "/emails/58200?credential_session_id=17" for 127.0.0.1 at 2021-11-27 15:35:34 +0100
+  
+SyntaxError (/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+...r :json => flatten_email letter
+...                         ^~~~~~
+):
+  
+app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+Started GET "/emails/58201?credential_session_id=17" for 127.0.0.1 at 2021-11-27 15:35:39 +0100
+  
+SyntaxError (/Users/stan/projects/email/backend/app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+...r :json => flatten_email letter
+...                         ^~~~~~
+):
+  
+app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/controllers/emails_controller.rb:27: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+Started GET "/emails/58201?credential_session_id=17" for 127.0.0.1 at 2021-11-27 15:37:15 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"17", "id"=>"58201"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.5ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 2276ms (ActiveRecord: 1.6ms | Allocations: 12201)
+
+
+  
+NameError (undefined local variable or method `part' for #<EmailsController:0x0000000000dbb0>):
+  
+app/controllers/emails_controller.rb:72:in `flatten_email'
+app/controllers/emails_controller.rb:70:in `block in flatten_email'
+app/controllers/emails_controller.rb:70:in `flatten_email'
+app/controllers/emails_controller.rb:70:in `block in flatten_email'
+app/controllers/emails_controller.rb:70:in `flatten_email'
+app/controllers/emails_controller.rb:70:in `block in flatten_email'
+app/controllers/emails_controller.rb:70:in `flatten_email'
+app/controllers/emails_controller.rb:27:in `show'
+Started GET "/emails/58201?credential_session_id=null" for 127.0.0.1 at 2021-11-27 15:37:47 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"null", "id"=>"58201"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.9ms | Allocations: 2222)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CredentialSession with 'id'=null):
+  
+app/controllers/emails_controller.rb:19:in `show'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 15:38:02 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.6ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 14:38:02.017365"], ["updated_at", "2021-11-27 14:38:02.017365"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 1.6ms | Allocations: 5702)
+
+
+Started GET "/emails?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:38:02 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"18"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5738ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 30576)
+
+
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:38:09 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 1626ms (ActiveRecord: 0.2ms | Allocations: 6539)
+
+
+  
+NameError (undefined local variable or method `part' for #<EmailsController:0x0000000000eab0>):
+  
+app/controllers/emails_controller.rb:72:in `flatten_email'
+app/controllers/emails_controller.rb:70:in `block in flatten_email'
+app/controllers/emails_controller.rb:70:in `flatten_email'
+app/controllers/emails_controller.rb:70:in `block in flatten_email'
+app/controllers/emails_controller.rb:70:in `flatten_email'
+app/controllers/emails_controller.rb:70:in `block in flatten_email'
+app/controllers/emails_controller.rb:70:in `flatten_email'
+app/controllers/emails_controller.rb:27:in `show'
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:38:42 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 2247ms (ActiveRecord: 1.0ms | Allocations: 11329)
+
+
+  
+Encoding::UndefinedConversionError ("\x89" from ASCII-8BIT to UTF-8):
+  
+app/controllers/emails_controller.rb:27:in `show'
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:39:31 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 1743ms (Views: 4.2ms | ActiveRecord: 0.8ms | Allocations: 13764)
+
+
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:40:29 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 312904ms (Views: 6.3ms | ActiveRecord: 1.0ms | Allocations: 22029)
+
+
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:45:45 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 96052ms (Views: 7.1ms | ActiveRecord: 0.9ms | Allocations: 23680)
+
+
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:47:31 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 4533ms (ActiveRecord: 1.0ms | Allocations: 14239)
+
+
+  
+Encoding::UndefinedConversionError ("\x89" from ASCII-8BIT to UTF-8):
+  
+app/controllers/emails_controller.rb:28:in `show'
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:48:09 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 9616ms (ActiveRecord: 0.7ms | Allocations: 14309)
+
+
+  
+Encoding::UndefinedConversionError ("\x89" from ASCII-8BIT to UTF-8):
+  
+app/controllers/emails_controller.rb:28:in `show'
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:48:36 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 42030ms (ActiveRecord: 0.2ms | Allocations: 9592)
+
+
+  
+Encoding::UndefinedConversionError ("\x89" from ASCII-8BIT to UTF-8):
+  
+app/controllers/emails_controller.rb:28:in `show'
+Started GET "/emails/58196?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:49:40 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58196"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 7166ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 10585)
+
+
+Started GET "/emails/58202?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:49:56 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58202"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 1967ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 4709)
+
+
+Started GET "/emails/58200?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:50:11 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58200"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 6327ms (ActiveRecord: 0.2ms | Allocations: 8821)
+
+
+  
+Encoding::UndefinedConversionError ("\x89" from ASCII-8BIT to UTF-8):
+  
+app/controllers/emails_controller.rb:28:in `show'
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 15:50:29 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 1114012ms (ActiveRecord: 0.2ms | Allocations: 39292)
+
+
+  
+Encoding::UndefinedConversionError ("\x89" from ASCII-8BIT to UTF-8):
+  
+app/controllers/emails_controller.rb:28:in `show'
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 16:09:11 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+  [1m[36mCredentialSession Load (0.5ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 9168ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 15780)
+
+
+Started GET "/emails/58200?credential_session_id=18" for 127.0.0.1 at 2021-11-27 16:09:57 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58200"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 8273ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 10159)
+
+
+Started GET "/emails/58201?credential_session_id=18" for 127.0.0.1 at 2021-11-27 16:11:59 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"18", "id"=>"58201"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 8109ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 10129)
+
+
+Started GET "/emails/58201?credential_session_id=null" for 127.0.0.1 at 2021-11-27 16:12:26 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"null", "id"=>"58201"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 473)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CredentialSession with 'id'=null):
+  
+app/controllers/emails_controller.rb:19:in `show'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 18:25:27 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (1.7ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 17:25:27.544136"], ["updated_at", "2021-11-27 17:25:27.544136"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 2295)
+
+
+Started GET "/emails?credential_session_id=19" for 127.0.0.1 at 2021-11-27 18:25:27 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"19"}
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 7205ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 30425)
+
+
+Started GET "/emails/58201?credential_session_id=19" for 127.0.0.1 at 2021-11-27 18:25:58 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"19", "id"=>"58201"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 8257ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 10102)
+
+
+Started GET "/emails/58197?credential_session_id=19" for 127.0.0.1 at 2021-11-27 18:26:21 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"19", "id"=>"58197"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 10847ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 8953)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 18:31:18 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestradee", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"sefer@weferwf.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestradee", "from_email"=>"sefer@weferwf.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.5ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestradee"], ["from_email", "sefer@weferwf.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 17:31:18.810093"], ["updated_at", "2021-11-27 17:31:18.810093"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 5892)
+
+
+Started GET "/emails?credential_session_id=20" for 127.0.0.1 at 2021-11-27 18:31:18 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"20"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 0.1ms | Allocations: 969)
+
+
+  
+Net::IMAP::NoResponseError ( Invalid credentials (Failure)):
+  
+app/controllers/emails_controller.rb:8:in `index'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 18:41:54 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"efwrefrwfr", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"efwrefrwfr", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.6ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "efwrefrwfr"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 17:41:54.873558"], ["updated_at", "2021-11-27 17:41:54.873558"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 2243)
+
+
+Started GET "/emails?credential_session_id=21" for 127.0.0.1 at 2021-11-27 18:41:54 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"21"}
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 6070ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 30418)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 18:42:10 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestraded", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"dewfnwjkn", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestraded", "from_email"=>"dewfnwjkn", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.5ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestraded"], ["from_email", "dewfnwjkn"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 17:42:10.944512"], ["updated_at", "2021-11-27 17:42:10.944512"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 1796)
+
+
+Started GET "/emails?credential_session_id=22" for 127.0.0.1 at 2021-11-27 18:42:10 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"22"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 500 Internal Server Error in 288ms (ActiveRecord: 0.2ms | Allocations: 2945)
+
+
+  
+Net::IMAP::NoResponseError ( Invalid credentials (Failure)):
+  
+app/controllers/emails_controller.rb:8:in `index'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 18:46:52 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"wefrfververv", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"wefrfververv", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.8ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "wefrfververv"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 17:46:52.871617"], ["updated_at", "2021-11-27 17:46:52.871617"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 1795)
+
+
+Started GET "/emails?credential_session_id=23" for 127.0.0.1 at 2021-11-27 18:46:52 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"23"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5759ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 30385)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 18:52:54 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.9ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 17:52:55.000800"], ["updated_at", "2021-11-27 17:52:55.000800"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 2245)
+
+
+Started GET "/emails?credential_session_id=24" for 127.0.0.1 at 2021-11-27 18:52:55 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"24"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 6021ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 30411)
+
+
+Started GET "/emails/58206?credential_session_id=24" for 127.0.0.1 at 2021-11-27 18:53:06 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"24", "id"=>"58206"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 2465ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 4174)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 18:54:47 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>24, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"Poo", "text"=>"<p>werr</p>", "email"=>{"credential_session_id"=>24, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"Poo", "text"=>"<p>werr</p>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 500 Internal Server Error in 1008ms (ActiveRecord: 0.2ms | Allocations: 1144)
+
+
+  
+ArgumentError (SMTP From address may not be blank: nil):
+  
+app/controllers/emails_controller.rb:63:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 18:55:26 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>24, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"Poo", "text"=>"<p>werr</p>", "email"=>{"credential_session_id"=>24, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"Poo", "text"=>"<p>werr</p>"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 200 OK in 2105ms (Views: 0.8ms | ActiveRecord: 1.1ms | Allocations: 9871)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 18:57:27 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>24, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"Poo", "text"=>"<p>werr</p>", "email"=>{"credential_session_id"=>24, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"Poo", "text"=>"<p>werr</p>"}}
+Completed 500 Internal Server Error in 3ms (Allocations: 1894)
+
+
+  
+NameError (undefined local variable or method `ffwe' for #<EmailsController:0x00000000017cc8>):
+  
+app/controllers/emails_controller.rb:36:in `create'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 18:59:54 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.9ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 17:59:54.731283"], ["updated_at", "2021-11-27 17:59:54.731283"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 5869)
+
+
+Started GET "/emails?credential_session_id=25" for 127.0.0.1 at 2021-11-27 18:59:54 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"25"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5955ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 30532)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:00:20 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>25, "to"=>"stlestrade@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"", "text"=>"<h1 id=\"weflwrjgfiljeriojvrwteoivgjwr\">weflwrjgfiljeriojvrwteoivgjwr</h1>", "email"=>{"credential_session_id"=>25, "to"=>"stlestrade@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"", "text"=>"<h1 id=\"weflwrjgfiljeriojvrwteoivgjwr\">weflwrjgfiljeriojvrwteoivgjwr</h1>"}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1883)
+
+
+  
+NameError (undefined local variable or method `ffwe' for #<EmailsController:0x00000000017e80>):
+  
+app/controllers/emails_controller.rb:36:in `create'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 19:01:01 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (1.1ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 18:01:01.910351"], ["updated_at", "2021-11-27 18:01:01.910351"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 1795)
+
+
+Started GET "/emails?credential_session_id=26" for 127.0.0.1 at 2021-11-27 19:01:01 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"26"}
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5752ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 30387)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:01:27 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>26, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"ervet", "text"=>"<p>evretvrtb</p>", "email"=>{"credential_session_id"=>26, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"ervet", "text"=>"<p>evretvrtb</p>"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1884)
+
+
+  
+NameError (undefined local variable or method `ffwe' for #<EmailsController:0x000000000183f8>):
+  
+app/controllers/emails_controller.rb:36:in `create'
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 19:06:50 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (1.0ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 18:06:50.582153"], ["updated_at", "2021-11-27 18:06:50.582153"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 2243)
+
+
+Started GET "/emails?credential_session_id=27" for 127.0.0.1 at 2021-11-27 19:06:50 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"27"}
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 6319ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 30408)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:07:17 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>", "email"=>{"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1883)
+
+
+  
+NameError (undefined local variable or method `ffwe' for #<EmailsController:0x00000000018560>):
+  
+app/controllers/emails_controller.rb:36:in `create'
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:07:39 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>", "email"=>{"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 200 OK in 2126ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 9879)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:07:45 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>", "email"=>{"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 200 OK in 1755ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 2132)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:09:49 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>", "email"=>{"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 200 OK in 1796ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 2130)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:11:25 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>", "email"=>{"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 200 OK in 1804ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 2133)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:11:58 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>", "email"=>{"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"wrfgerv", "text"=>"<p>refewgvret</p>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 200 OK in 1733ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 2131)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:12:47 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"", "text"=>"<p>wdcnkwenbckhebfvhjlbwerhj</p>", "email"=>{"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"", "text"=>"<p>wdcnkwenbckhebfvhjlbwerhj</p>"}}
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 200 OK in 1960ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 2067)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:14:08 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"werfrefe", "text"=>"<p>fserwfved</p>", "email"=>{"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"werfrefe", "text"=>"<p>fserwfved</p>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 200 OK in 1845ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 2138)
+
+
+Started POST "/emails" for 127.0.0.1 at 2021-11-27 19:16:55 +0100
+Processing by EmailsController#create as JSON
+  Parameters: {"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"ergertgbrbertz", "text"=>"<h1 id=\"ergvetrbvw\">ergvetrbvw</h1>", "email"=>{"credential_session_id"=>27, "to"=>"pankov.stan.here@gmail.com", "cc"=>"", "bcc"=>"", "subject"=>"ergertgbrbertz", "text"=>"<h1 id=\"ergvetrbvw\">ergvetrbvw</h1>"}}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:36:in `create'
+Completed 200 OK in 1960ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 2130)
+
+
+Started GET "/emails/58197?credential_session_id=27" for 127.0.0.1 at 2021-11-27 19:17:08 +0100
+Processing by EmailsController#show as */*
+  Parameters: {"credential_session_id"=>"27", "id"=>"58197"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:19:in `show'
+Completed 200 OK in 2329ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 4234)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 19:22:00 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (1.0ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 18:22:00.999069"], ["updated_at", "2021-11-27 18:22:00.999069"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 1844)
+
+
+Started GET "/emails?credential_session_id=28" for 127.0.0.1 at 2021-11-27 19:22:01 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"28"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5621ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 30378)
+
+
+Started GET "/emails?credential_session_id=28" for 127.0.0.1 at 2021-11-27 19:29:15 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"28"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5993ms (Views: 0.8ms | ActiveRecord: 0.6ms | Allocations: 28455)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 19:33:02 +0100
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (1.0ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 18:33:02.152528"], ["updated_at", "2021-11-27 18:33:02.152528"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 1796)
+
+
+Started GET "/emails?credential_session_id=29" for 127.0.0.1 at 2021-11-27 19:33:02 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"29"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5498ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 30259)
+
+
+Started GET "/emails?credential_session_id=29" for 127.0.0.1 at 2021-11-27 19:33:13 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"29"}
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5550ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 28011)
+
+
+Started POST "/credential_sessions" for 127.0.0.1 at 2021-11-27 21:22:32 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CredentialSessionsController#create as JSON
+  Parameters: {"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "username"=>"stlestrade", "domain"=>"gmail.com", "password"=>"[FILTERED]", "from_email"=>"stlestrade@gmail.com", "credential_session"=>{"imap_host"=>"imap.googlemail.com", "imap_port"=>"993", "smtp_host"=>"smtp.gmail.com", "smtp_port"=>"587", "domain"=>"gmail.com", "username"=>"stlestrade", "from_email"=>"stlestrade@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mCredentialSession Create (0.5ms)[0m  [1m[32mINSERT INTO "credential_sessions" ("imap_host", "imap_port", "smtp_host", "smtp_port", "domain", "username", "from_email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["imap_host", "imap.googlemail.com"], ["imap_port", 993], ["smtp_host", "smtp.gmail.com"], ["smtp_port", 587], ["domain", "gmail.com"], ["username", "stlestrade"], ["from_email", "stlestrade@gmail.com"], ["password", "MyMyHeyHey1!"], ["created_at", "2021-11-27 20:22:32.757454"], ["updated_at", "2021-11-27 20:22:32.757454"]]
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/credential_sessions_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 9548)
+
+
+Started GET "/emails?credential_session_id=30&page=1" for 127.0.0.1 at 2021-11-27 21:22:32 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"30", "page"=>"1"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 500 Internal Server Error in 3078ms (ActiveRecord: 0.1ms | Allocations: 13642)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/emails_controller.rb:10:in `index'
+Started GET "/emails?credential_session_id=30&page=1" for 127.0.0.1 at 2021-11-27 21:23:12 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"30", "page"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5927ms (Views: 0.8ms | ActiveRecord: 1.0ms | Allocations: 37438)
+
+
+Started GET "/emails?credential_session_id=30&page=2" for 127.0.0.1 at 2021-11-27 21:23:20 +0100
+Processing by EmailsController#index as */*
+  Parameters: {"credential_session_id"=>"30", "page"=>"2"}
+  [1m[36mCredentialSession Load (0.1ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:5:in `index'
+Completed 200 OK in 5525ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 29806)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.6ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" ORDER BY "credential_sessions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCredentialSession Load (0.5ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at < '2021-11-18 16:46:31.992640') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at < '2021-11-27 16:46:39.104915') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at < '2021-11-26 16:46:52.994294') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.5ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at < '2021-11-27 05:47:03.511739') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at < '2021-11-27 10:47:08.464199') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at < '2021-11-27 15:47:14.476168') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "credential_sessions" WHERE (created_at < '2021-11-27 15:47:19.529119')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "credential_sessions" WHERE (created_at < '2021-11-28 06:47:26.553932')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at < '2021-11-25 16:48:23.824493') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at > '2021-11-25 16:48:37.762888') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at > '2021-11-28 15:48:49.685468') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at > '2021-11-28 15:49:24.160983') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.2ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at > '2021-11-25 16:49:31.074767') AND "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.6ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at > '2021-11-28 15:49:42.741792') AND "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at > '2021-11-28 15:51:29.198174') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCredentialSession Load (0.4ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE "credential_sessions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.9ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at > ?) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCredentialSession Load (0.3ms)[0m  [1m[34mSELECT "credential_sessions".* FROM "credential_sessions" WHERE (created_at < '2021-11-27 16:53:59.721189') LIMIT ?[0m  [["LIMIT", 1]]
